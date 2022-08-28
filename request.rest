@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJhenJhIHlhemlkIiwiZW1haWwiOiJhenJhQGdhbWFpbC5jb20iLCJpYXQiOjE2NjE2ODgwNjAsImV4cCI6MTY2MTY4ODA4MH0.lKWvRG_MDKggUAKSXwoY7O4qk0c5xdGbepYnRgJGPwg
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "azra yazid",
+    "email": "azra@gamail.com",
+    "password": "rahasia",
+    "confPassword": "rahasia" 
+}
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "azra@gamail.com",
+    "password": "rahasia"
+}
+###
+
+GET http://localhost:5000/token
+###
+
+DELETE http://localhost:5000/logout
